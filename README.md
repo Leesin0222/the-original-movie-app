@@ -1,6 +1,5 @@
 # the-original-movie-app
 
--------------------------------
 ## 0. 프로젝트 세팅
 
 ### 새로 알 수 있었던 점 && 진행하면서 겪었던 이슈
@@ -24,3 +23,19 @@ coil = {group = "io.coil-kt", name = "coil-compose", version.ref = "coil-compose
 // + build.gradle.kts에서는 이렇게 작성해야한다!
 implementation(libs.coil)
 ```
+--------------------------
+
+## 1. 영화 썸네일 만들기
+
+### 새로 알 수 있었던 점 && 진행하면서 겪었던 이슈
+정렬과 배치를 
+정렬은 Alignment로,
+배치는 Arrangment로 할 수 있다.
+
+추가로 찾아보다가 Arrangement에서는 spacedBy()라는 아이템과 아이템 간의 간격 설정을 해줄 수 있는 꿀 함수를 찾았다..!
+~~완전 꿀인데..? xml저리가!~~
+
+preview는 preview할 함수에 바로 @Preview 어노테이션을 붙히는 방법보다 따로 Preview함수를 만들어서 관리한다.
+
+추가로 구현한 MovieItem에 대해 직접 그림으로 표현해보면서 이해해보았다. 확실히 구조가 이해가 잘된다.
+![image](https://github.com/Leesin0222/the-original-movie-app/assets/90879448/dbb73fa2-9b35-43ef-b34d-8172ff9ee932)
